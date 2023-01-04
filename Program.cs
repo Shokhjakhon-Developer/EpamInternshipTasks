@@ -1,15 +1,31 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using EpamTraining.Internship.Interfaces.Accessory_objects;
-using EpamTraining.Internship.Interfaces.Flying_objects;
+using Practical_Task_3;
 
-Bird bird = new Bird(1, 1, 1);
-Airplane airplane = new Airplane(1, 1, 1);
-Drone drone = new Drone(1, 1, 1);
-Coordinate coordinate = new Coordinate(548, 548, 548);
+Vehicle[] collection =
+{
+    new PassengerCar(325, 3, "Inline", "158859",
+        4, 1, 2000, "Automatic", 10, "Star Vehicle Production"),
 
-bird.FlyTo(coordinate);
-airplane.FlyTo(coordinate);
-drone.FlyTo(coordinate);
+    new Truck(600, 10, "Inline", "998552", 6,
+        2, 15000, "Automatic", 25, "Star Vehicle Production"),
 
-Console.WriteLine($"{bird}\n{airplane}\n{drone}");
+    new Bus(450, 6, "Inline", "556589", 4,
+        2, 8000, "Automatic", 15, "Star Vehicle Production"),
+
+    new Scooter(30, 0.5, "Inline", "121585", 2, 1,
+        120, "No", 2, "Star Vehicle Production")
+};
+
+//For task 1.
+Console.WriteLine(collection[0]);
+Console.WriteLine(collection[1]);
+Console.WriteLine(collection[2]);
+Console.WriteLine(collection[3]);
+
+//For task 2.
+//Console.WriteLine(XmlData.ShowByEngineCapacity());
+//Console.WriteLine("////////////////////////////");
+//Console.WriteLine(XmlData.ShowOnlyBusAndTruck());
+//Console.WriteLine("////////////////////////////");
+//Console.WriteLine(XmlData.ShowByTransmissionType());
