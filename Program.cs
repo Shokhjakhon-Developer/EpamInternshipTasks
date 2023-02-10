@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using EpamTraining.Internship.Interfaces.Accessory_objects;
-using EpamTraining.Internship.Interfaces.Flying_objects;
+using InterfaceAndAbstractClasses.Accessory_objects;
+using InterfaceAndAbstractClasses.Flying_objects;
 
 Bird bird = new Bird(1, 1, 1);
 Airplane airplane = new Airplane(1, 1, 1);

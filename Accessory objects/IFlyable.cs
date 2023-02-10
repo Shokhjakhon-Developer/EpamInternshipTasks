@@ -1,4 +1,4 @@
-﻿namespace EpamTraining.Internship.Interfaces.Accessory_objects;
+﻿namespace InterfaceAndAbstractClasses.Accessory_objects;
 
 public interface IFlyable
 {

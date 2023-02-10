@@ -1,6 +1,6 @@
-﻿using EpamTraining.Internship.Interfaces.Accessory_objects;
+﻿using InterfaceAndAbstractClasses.Accessory_objects;
 
-namespace EpamTraining.Internship.Interfaces.Flying_objects;
+namespace InterfaceAndAbstractClasses.Flying_objects;
 
 public class Airplane : IFlyable
 {
@@ -45,7 +45,9 @@ public class Airplane : IFlyable
         {
             time += 10.0 / speed; //Simple formula to find time time = distance / speed
             if (speed < 400)
+            {
                 speed += 10; //If our speed reaches 400 kms/h , it will not change further and will stay constant.
+            }
         }
 
         return time;

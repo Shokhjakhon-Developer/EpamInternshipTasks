@@ -1,6 +1,6 @@
-﻿using EpamTraining.Internship.Interfaces.Accessory_objects;
+﻿using InterfaceAndAbstractClasses.Accessory_objects;
 
-namespace EpamTraining.Internship.Interfaces.Flying_objects;
+namespace InterfaceAndAbstractClasses.Flying_objects;
 
 public class Drone : IFlyable
 {
