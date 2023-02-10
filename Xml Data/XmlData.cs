@@ -1,6 +1,6 @@
 ﻿using System.Xml.Linq;
 
-namespace XmlEpam.Xml_Data;
+namespace Collections.Xml_Data;
 
 public static class XmlData
 {

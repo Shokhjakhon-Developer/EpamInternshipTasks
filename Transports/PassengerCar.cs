@@ -1,4 +1,4 @@
-﻿namespace Practical_Task_3;
+﻿namespace Collections.Transports;
 
 public class PassengerCar : Vehicle
 {
@@ -12,5 +12,5 @@ public class PassengerCar : Vehicle
     }
 
 
-    public override string ToString() => Description + GetEngineInfo() + GetChassisInfo() + GetTransmissionInfo();
+    public override string ToString() => $"{Description} {GetEngineInfo()} {GetChassisInfo()} {GetTransmissionInfo()}";
 }

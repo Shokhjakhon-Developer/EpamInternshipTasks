@@ -1,4 +1,6 @@
-﻿namespace Practical_Task_3;
+﻿using Collections.Mechanical_parts;
+
+namespace Collections.Transports;
 
 public class Vehicle
 {
