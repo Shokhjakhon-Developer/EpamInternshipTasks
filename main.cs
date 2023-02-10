@@ -11,20 +11,20 @@ namespace PracticalTasks
             Console.WriteLine(ConsecutiveElement(str));
         }
 
-        private static string ConsecutiveElement(string str)
+        private static string ConsecutiveElement(string setOfCharacters)
         {
-            if(str == "")
+            if(setOfCharacters == "")
             {
                 return "No arguments.";
             }
             int count = 0;
             int localCount = 0;
-            string result = str[0].ToString();
-            for(int i = 0; i < str.Length; i++)
+            string result = setOfCharacters[0].ToString();
+            for(int i = 0; i < setOfCharacters.Length; i++)
             {
-                for(int j = i+ 1; j < str.Length; j++)
+                for(int j = i+ 1; j < setOfCharacters.Length; j++)
                 {
-                    if(str[j] == str[i])
+                    if(setOfCharacters[j] == setOfCharacters[i])
                     {
                         localCount++;
                     }
@@ -32,12 +32,12 @@ namespace PracticalTasks
                 if(localCount > count)
                 {
                     count = localCount;
-                    result = str[i].ToString();
+                    result = setOfCharacters[i].ToString();
 
                 }
             }
           
-            return "The most repeated character is \"" + result + "\".";
+            return $"The most repeated character is {result}.";
         }
 
        
