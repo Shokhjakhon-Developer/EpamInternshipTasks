@@ -10,9 +10,13 @@ class Program
     static char ConvertChar(int num)
     {
         if (num >= 0 && num <= 9)
+        {
             return (char)(num + 48);
+        }
         else
+        {
             return (char)(num - 10 + 65);
+        }
     }
 
    
@@ -38,6 +42,6 @@ class Program
         Console.WriteLine("Enter your new base: ");
         var baseNum = Convert.ToInt32(Console.ReadLine());
         
-        Console.WriteLine(inputNum +" in base " + baseNum + " is " + ConverToNewBase(baseNum, inputNum)  + ".");
+        Console.WriteLine($"{inputNum} in base {baseNum} is {ConverToNewBase(baseNum, inputNum)}.");
     }
 }
